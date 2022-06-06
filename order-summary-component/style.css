@@ -1,0 +1,122 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    background: url("https://raw.githubusercontent.com/jechea14/Frontend-Projects/243b9a6a1aaee949a9b430c08a368f170e0b4f08/order-summary-component/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 5rem; */
+
+}
+
+.card {
+    border-radius: 20px;
+    background-color: white;
+}
+
+.desc {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.desc p {
+    margin-top: 1rem;
+    color: var(--desaturated-blue);
+}
+
+.card .image {
+    width: 100%;
+}
+
+.card .image .img {
+    border-radius: 15px 15px 0 0;
+}
+
+.plan {
+    margin: 0 1.5rem;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: var(--very-pale-blue);
+}
+
+.plan-price p {
+    color: var(--desaturated-blue);
+}
+
+.change {
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.change:hover {
+    color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.payment-button {
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1rem 0.8rem;
+    border-radius: 15px;
+    background-color: var(--bright-blue);
+    color: white;
+    box-shadow: 12px 12px 10px hsl(225, 100%, 98%, 0.2);
+}
+
+.payment-button:hover {
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.payment-button p {
+    font-weight: 700;
+}
+
+.cancel-order {
+    text-align: center;
+    font-weight: 900;
+    margin: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    color: var(--desaturated-blue);
+}
+
+.cancel-order:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+@media (min-width: 375px) {}
