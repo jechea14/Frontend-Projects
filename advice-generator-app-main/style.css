@@ -1,0 +1,57 @@
+:root {
+/* ### Primary */
+--light-cyan: hsl(193, 38%, 86%);
+--neon-green: hsl(150, 100%, 66%);
+
+/* ### Neutral */
+--grayish-blue: hsl(217, 19%, 38%);
+--dark-grayish-blue: hsl(217, 19%, 24%);
+--dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 28px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+    margin: 1rem;
+}
+
+.advice-title {
+    color: var(--neon-green);
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.btn {
+    border: 1px solid white;
+}
+
+.advice {
+    color: var(--light-cyan);
+    margin: 1rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
