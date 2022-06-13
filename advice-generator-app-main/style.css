@@ -25,20 +25,13 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
-    padding: 1.25rem;
+    padding: 2.5rem;
 }
 
 .container {
-    /* background-color: var(--dark-grayish-blue);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    border-radius: 1rem;
-    margin: 0 1.5rem; */
+
     background-color: var(--dark-grayish-blue);
-    padding: 1.25rem 0 3rem 0;
-    color: #ffffff;
+    padding: 1.25rem 0 4rem 0;
     border-radius: 1.25rem;
     position: relative;
 }
@@ -48,29 +41,19 @@ body {
     font-size: 0.8rem;
     margin: 2rem 0;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
 }
 
 .btn {
-    /* border-radius: 50%;
+    border-radius: 50%;
     border: none;
     background-color: var(--neon-green);
     cursor: pointer;
     padding: 1.25rem;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); */
-
-    background-color: var(--neon-green);
-    padding: 1.2rem;
-    border: none;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
     transform: translateX(-50%);
     bottom: -2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .dice {
@@ -84,7 +67,7 @@ body {
 
 .advice {
     color: var(--light-cyan);
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     font-weight: 800;
     font-size: 28px;
 }
@@ -93,6 +76,7 @@ body {
     font-size: 11px;
     text-align: center;
     color: white;
+    margin-top: 3rem;
 }
 
 .attribution a {
@@ -101,6 +85,6 @@ body {
 
 @media (min-width: 500px) {
     .container {
-        max-width: 480px;
+        max-width: 550px;
     }
 }
