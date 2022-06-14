@@ -5,35 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><img src="./images/logo.svg" alt=""></li>
+          <li>
+            <img src="./images/icon-menu.svg" alt="menu icon">
+            <!-- <ul>
+              <li id="features">Features</li>
+                <ul>
+                  <li><img src="./images/icon-todo.svg" alt="todo icon">Todo List</li>
+                  <li><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</li>
+                  <li><img src="./images//icon-reminders.svg" alt="reminder icon">Reminders</li>
+                  <li><img src="./images/icon-planning.svg" alt="planning icon">Planning</li>
+                </ul>
+              <li id="company">Company</li>
+                <ul>
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+    
+            <ul>
+              <li id="login">Login</li>
+              <li id="register">Register</li>          
+            </ul> -->
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="landing">
+        <picture id="landing-img">
+          <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png">
+          <img src="./images/image-hero-mobile.png" alt="hero image mobile">
+        </picture>
+        <div class="landing-container">
+          <div class="desc">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>          
+    
+            <button>Learn more</button>
+          </div>
+          <div class="client-list">
+            <picture>
+              <img src="./images/client-databiz.svg" alt="databiz icon">
+            </picture>
+            <picture>
+              <img src="./images/client-audiophile.svg" alt="audiophile icon">
+            </picture>
+            <picture>
+              <img src="./images/client-meet.svg" alt="meet icon">
+            </picture>
+            <picture>
+              <img src="./images/client-maker.svg" alt="clientmaker icon">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Features
-  Company
-  Careers
-  About
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="app.js"></script>
 </body>
 </html>
