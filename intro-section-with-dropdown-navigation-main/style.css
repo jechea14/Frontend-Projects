@@ -25,6 +25,18 @@ body {
     padding: 1rem;
 }
 
+.dropdown-content {
+    display: none;
+    
+}
+
+
+#menu, #features, #company{
+    border: none;
+    background-color: var(--almost-white);
+    cursor: pointer;
+}
+
 .landing .desc {
     margin: 1rem 0;
 }
@@ -32,25 +44,31 @@ body {
 .landing .desc p {
     margin: 1.5rem 0;
     color: var(--medium-gray);
+    line-height: 1.8rem;
 }
 
-.navbar ul{
+/* .navbar{
     display: flex;
     justify-content: space-between;
-    list-style: none;
 }
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+} */
 
 #landing-img img {
     width: 100%;
     height: 100%;
 }
 
-button {
+.learn-more {
     background-color: var(--almost-black);
     color: var(--almost-white);
     padding: 0.5rem 1rem;
     border-radius: 0.8rem;
     margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 .client-list {
@@ -58,10 +76,35 @@ button {
     justify-content: space-around;
 }
 
+.show {
+    display: block;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media (min-width: 768px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 0.5rem 1rem;
+    }
+
+    #register {
+        border: 1px solid var(--almost-black);
+        /* padding: 1rem; */
+        border-radius: 1rem;
+        text-align: center;
+    }
+
     .landing {
         display: flex;
         flex-direction: row-reverse;
@@ -71,12 +114,25 @@ button {
     .landing-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         text-align: left;
+        margin: 0;
+    }
+
+    .desc h1 {
+        font-weight: 700;
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
     }
 
     .desc p {
-        font-weight: 700;
+        padding-right: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .learn-more:hover {
+        background-color: var(--almost-white);
+        color: var(--almost-black);
+        cursor: pointer;
     }
 }
