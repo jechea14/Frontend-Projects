@@ -1,0 +1,12 @@
+.navList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropdownConent {
+    display: none;
+}
+
+.show {
+    display: block;
+}
