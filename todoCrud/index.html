@@ -13,21 +13,41 @@
   <button id="button" onclick="addTodo()">Submit</button>
   <div id="todoList"></div>
 
-  <nav class="nabar">
-    <ul class="navList">
+  <nav class="navbar">
+    <div class="navBarMenuButton">
+      <button onclick="openMenu()" >Menu</button>
+    </div>
+    <ul class="navList" id="mobileMenu">
       <li>Home</li>
       <li>About</li>
-      <li onclick="dropdown()">
+      <li onclick="dropdown()" class="dropdown_button">
         Products
-        <ul id="productDropdown" class="dropdownConent">
-          <li>A</li>
+        <div id="productDropdown" class="dropdownConent">
+          <!-- <li>A</li>
           <li>B</li>
-          <li>C</li>
-        </ul>
+          <li>C</li> -->
+          <div>A Product</div>
+          <div>B Product</div>
+          <div>C Product (new)</div>
+          </div>
       </li>
       <li>Contact</li>
     </ul>
   </nav>
+
+  <input type="text" placeholder="Search Pokemon" id="pokemonInput"/>
+  <button onclick="searchPokemon()" id="pokemonButton">Search Pokemon</button>
+  <div id="pokemonResult"></div>
+
+  <!-- <nav class="mobileNavbarContainer">
+    <button onclick="showMenu()">=</button>
+    <ul class="mobileNavbar" id="mobileMenu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Products</li>
+      <li>Contact</li>
+    </ul>
+  </nav> -->
 
   <script src="index.js"/>
 </body>
