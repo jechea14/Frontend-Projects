@@ -3,10 +3,49 @@
     justify-content: space-evenly;
 }
 
+.navList > li {
+    border: 1px solid black;
+
+}
+
 .dropdownConent {
     display: none;
+    position: absolute;
+}
+
+.dropdownConent > div {
+    padding: 0.5rem;
+    background-color: burlywood;
+    outline: solid;
+    text-align: center;
+    width: 6rem;
+    /* height: 1rem; */
 }
 
 .show {
     display: block;
+}
+
+.navBarMenuButton {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .navBarMenuButton {
+        display: block;
+        text-align: right;
+    }
+
+    .navbar {
+        text-align: right;
+    }
+
+    .navList {
+        display: none;
+    }
+
+    .show {
+        display: block;
+        /* text-align: right; */
+    }
 }
