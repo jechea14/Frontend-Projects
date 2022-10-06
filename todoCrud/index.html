@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="app"></div>
-  <input type="text" id="todoInput">
+  <input type="text" id="todoInput" placeholder="Enter ToDo">
   <button id="button" onclick="addTodo()">Submit</button>
   <div id="todoList"></div>
 
@@ -23,15 +23,18 @@
       <li onclick="dropdown()" class="dropdown_button">
         Products
         <div id="productDropdown" class="dropdownConent">
-          <!-- <li>A</li>
-          <li>B</li>
-          <li>C</li> -->
           <div>A Product</div>
           <div>B Product</div>
           <div>C Product (new)</div>
-          </div>
+        </div>
       </li>
-      <li>Contact</li>
+      <li onclick="openContact()">Contact
+        <div id="contactDropdown" class="dropdownConent">
+          <div>A </div>
+          <div>B </div>
+          <div>C </div>
+        </div>
+      </li>
     </ul>
   </nav>
 
@@ -39,15 +42,67 @@
   <button onclick="searchPokemon()" id="pokemonButton">Search Pokemon</button>
   <div id="pokemonResult"></div>
 
-  <!-- <nav class="mobileNavbarContainer">
-    <button onclick="showMenu()">=</button>
-    <ul class="mobileNavbar" id="mobileMenu">
-      <li>Home</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Contact</li>
-    </ul>
-  </nav> -->
+  Accordian
+  <div>
+    <details>
+      <summary>How many team members can I invite?</summary>
+      <div>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</div>
+      <details>
+        <summary>FAQ</summary>
+        <div>ioweuekfjskdj</div>
+      </details>
+    </details>
+    <hr>
+    <details>
+      <summary>What is the maximum file upload size?</summary>
+      <div>No more than 2GB. All files in your account must fit your allotted storage space.</div>
+    </details>
+    <hr>
+    <details>
+      <summary>How do I reset my password?</summary>
+      <div>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</div>
+    </details>
+    <hr>
+    <details>
+      <summary>Can I cancel my subscription?</summary>
+      <div>Yes! Send us a message and we’ll process your request no questions asked.</div>
+    </details>
+    <hr>
+    <details>
+      <summary>Do you provide additional support?</summary>
+      <div>Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+    </details>
+    <hr>
+
+  </div>
+  <!-- <div>
+    <div class="accordian-container">
+      <div class="label" onclick="openAccordian()">How many team members can I invite?</div>
+      <div class="content">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</div>
+    </div>
+    <hr>
+    <div class="accordian-container">
+      <div class="label" onclick="openAccordian()">What is the maximum file upload size?</div>
+      <div class="content">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+    </div>
+    <hr>
+    <div class="accordian-container">
+      <div class="label" onclick="openAccordian()">How do I reset my password?</div>
+      <div class="content">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</div>
+    </div>
+    <hr>
+    <div class="accordian-container">
+      <div class="label" onclick="openAccordian()">Can I cancel my subscription?</div>
+      <div class="content">Yes! Send us a message and we’ll process your request no questions asked.</div>
+    </div>
+    <hr>
+    <div class="accordian-container">
+      <div class="label" onclick="openAccordian()">Do you provide additional support?</div>
+      <div class="content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+    </div>
+    <hr>
+
+  </div> -->
 
   <script src="index.js"/>
 </body>
