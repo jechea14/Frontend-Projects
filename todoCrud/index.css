@@ -26,6 +26,10 @@
     display: block;
 }
 
+.showContact {
+    display: block;
+}
+
 .navBarMenuButton {
     display: none;
 }
@@ -48,4 +52,21 @@
         display: block;
         /* text-align: right; */
     }
+}
+
+/* -------------------------------------- */
+.content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+details > summary {
+    list-style: none;
+}
+
+summary {
+    cursor: pointer;
 }
